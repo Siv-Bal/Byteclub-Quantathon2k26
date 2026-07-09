@@ -14,7 +14,7 @@
 
 This repository has been developed **solely for demonstration purposes as part of the qualification process for RIT Quantathon 2026**. It does not represent the final, production-ready version of our solution. The intent behind this build was to provide the judging panel with a working, interactive demonstration of our proposed approach to the problem statement — rather than relying solely on a static presentation deck.
 
-Accordingly, we acknowledge and affirm that a refined and more complete version of this project will be developed and submitted during the finals, incorporating improvements in architecture, performance, and feature scope based on feedback received during the qualification round.
+Accordingly, we acknowledge and affirm that a newer and more complete version  will be developed only during the 36-hours time window and submitted during the finals, incorporating improvements in architecture, performance, and feature scope based on feedback received during the qualification round.
 
 ---
 
