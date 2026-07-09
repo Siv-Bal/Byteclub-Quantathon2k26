@@ -6,7 +6,7 @@
     },
     {
       "source": "/api/:path*",
-      "destination": "https://sentinel-node-backend.onrender.com/api/:path*"
+      "destination": "https://byteclub-quantathon2k26.onrender.com/api/:path*"
     }
   ]
 }
