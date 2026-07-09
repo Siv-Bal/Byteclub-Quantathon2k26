@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/optimize",
+      "destination": "https://sentinel-python-backend.onrender.com/api/optimize"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://sentinel-node-backend.onrender.com/api/:path*"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+services:
+  # Node.js Express Backend
+  - type: web
+    name: sentinel-node-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server/index.mjs
+    envVars:
+      - key: HF_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+
+  # Python FastAPI Backend
+  - type: web
+    name: sentinel-python-backend
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT

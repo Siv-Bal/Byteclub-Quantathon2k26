@@ -965,7 +965,7 @@ Instruct: Write a highly professional, clinical 3 paragraph incident summary sui
   }
 });
 
-const port = Number(process.env.API_PORT || 4000);
+const port = Number(process.env.PORT || process.env.API_PORT || 4000);
 app.listen(port, () => {
   console.log(`[sentinel-backend] listening on http://localhost:${port}`);
   console.log(`[sentinel-backend] db: ${dbPath}`);

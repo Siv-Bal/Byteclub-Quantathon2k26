@@ -42,7 +42,7 @@ export async function requestQuantumOptimization(
   const weights = incidents.map(incident => incident.priority || 1.0);
 
   // 3. Dispatch payload to local FastAPI Quantum Pipeline
-  const response = await fetch('http://localhost:8000/api/optimize', {
+  const response = await fetch('/api/optimize', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
