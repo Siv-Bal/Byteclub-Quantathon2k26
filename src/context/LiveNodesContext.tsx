@@ -65,6 +65,10 @@ export const LiveNodesProvider: React.FC<{ children: React.ReactNode }> = ({ chi
 
   // 1. Database Listener pointing to /liveNodes
   useEffect(() => {
+    if (!db) {
+      console.warn('LiveNodesContext: Firebase db not initialized, skipping listener.');
+      return;
+    }
     const liveNodesRef = ref(db, 'liveNodes');
     const unsubscribe = onValue(liveNodesRef, (snapshot) => {
       const data = snapshot.val();
